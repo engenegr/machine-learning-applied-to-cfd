@@ -73,9 +73,7 @@ import torch.nn.functional as F
 import sys
 IN_COLAB = 'google.colab' in sys.modules
 # display images in notebook
-from IPython.display import Image, display
 
-%matplotlib inline
 print("Pandas version: {}".format(pd.__version__))
 print("Numpy version: {}".format(np.__version__))
 print("ScikitLearn version: {}".format(sklearn.__version__))
@@ -601,11 +599,6 @@ plt.show()
 
 # In[24]:
 
-
-if IN_COLAB:
-    display(Image(url="https://raw.githubusercontent.com/AndreWeiner/machine-learning-applied-to-cfd/master/notebooks/combined_linear_models.png"))
-else:
-    display(Image("combined_linear_models.png"))
 
 # ## The multi-layer percepton<a id="multi_layer_perceptron"></a>
 # 
